@@ -33,6 +33,7 @@ import InboxIcon from 'material-ui-icons/Inbox';
 import DraftsIcon from 'material-ui-icons/Drafts';
 
 import MyCustomCard from './components/MyCustomCard';
+import CustomAppBar from './components/CustomAppBar';
 
 import logo from './logo.svg';
 import './App.css';
@@ -42,12 +43,12 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div>
-          <MyCustomCard />
-          <AppBar title="Quick proof-of-concept"/>
+          <CustomAppBar />
           <div className="container">
-              <img src={logo} className="App-logo" alt="logo" />
-              <h2>Welcome to React</h2>
-            </div>
+            <MyCustomCard />
+            <img src={logo} className="App-logo" alt="logo" />
+            <h2>Welcome to React</h2>
+            
             <p className="App-intro">
               To get started, edit <code>src/App.js</code> and save to reload.
             </p>
@@ -90,7 +91,8 @@ class App extends Component {
                 </ListItem>
               </List>
             </div>
-        </div>
+          </div>
+        </div> 
       </MuiThemeProvider>
     );
   }

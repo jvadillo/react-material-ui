@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, createStyleSheet } from 'material-ui/styles';
-import Card, { CardActions, CardContent } from 'material-ui/Card';
+import Card, { CardActions, CardContent, CardMedia, CardHeader } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import Avatar from 'material-ui/Avatar';
 
 const styleSheet = createStyleSheet('SimpleCard', theme => ({
   card: {
     minWidth: 275,
+    margin: '20px',
   },
   bullet: {
     display: 'inline-block',
@@ -32,6 +34,18 @@ function SimpleCard(props) {
   return (
     <div>
       <Card className={classes.card}>
+        <CardHeader
+            avatar={
+              <Avatar aria-label="Recipe" className={classes.avatar}>
+                R
+              </Avatar>
+            }
+            title="Shrimp and Chorizo Paella"
+            subheader="September 14, 2016"
+        />
+        <CardMedia>
+          <img src="https://material-ui-1dab0.firebaseapp.com/build/abd50bc0e11052fea9669f18f0c017bc.jpg" alt="Contemplative Reptile" />
+        </CardMedia>
         <CardContent>
           <Typography type="body1" className={classes.title}>
             Word of the Day
