@@ -5,6 +5,9 @@ import Card, { CardActions, CardContent, CardMedia, CardHeader } from 'material-
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import Avatar from 'material-ui/Avatar';
+import IconButton from 'material-ui/IconButton';
+import FavoriteIcon from 'material-ui-icons/Favorite';
+import ShareIcon from 'material-ui-icons/Share';
 
 const styleSheet = createStyleSheet('SimpleCard', theme => ({
   card: {
@@ -40,15 +43,21 @@ function SimpleCard(props) {
                 R
               </Avatar>
             }
-            title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016" 
+            title={props.title}
+            subheader={props.subheader}
         />
         <CardMedia>
           <img src="https://material-ui-1dab0.firebaseapp.com/build/abd50bc0e11052fea9669f18f0c017bc.jpg" alt="Contemplative Reptile" />
         </CardMedia>
         <CardContent>
+          <IconButton aria-label="Add to favorites">
+              <FavoriteIcon />
+            </IconButton>
+            <IconButton aria-label="Share">
+              <ShareIcon />
+            </IconButton>
           <Typography type="body1" className={classes.title}>
-            Word of the Day
+            {props.likes} likes
           </Typography>
           <Typography type="headline" component="h2">
             be{bull}nev{bull}o{bull}lent

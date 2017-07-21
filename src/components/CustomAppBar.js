@@ -23,19 +23,19 @@ const styleSheet = createStyleSheet('CustomAppBar', {
   headerContainer: {
   	height: '76px',
   	margin: '0 auto',	
-  	maxWidth: '1100px',
+  	maxWidth: '930px',
   	justifyContent: 'space-between',
   },
   logoIcon: {
   	paddingRight: '14px',
   	marginRight: '14px',
-    fontSize: '36px',
+    fontSize: '30px',
     borderRight: '1px solid #dbdbdb',
     display: 'inline-flex',
   },
   flex: {
     fontFamily: 'Pacifico,cursive',
-    fontSize: '32px',
+    fontSize: '26px',
     display: 'inline-flex',
   },
   flex2: {
