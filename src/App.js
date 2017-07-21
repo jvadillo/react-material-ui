@@ -46,6 +46,8 @@ class App extends Component {
           <CustomAppBar />
           <div className="container">
             <MyCustomCard />
+            <MyCustomCard />
+            <MyCustomCard />
           </div>
         </div> 
       </MuiThemeProvider>

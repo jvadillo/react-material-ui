@@ -9,7 +9,7 @@ import Avatar from 'material-ui/Avatar';
 const styleSheet = createStyleSheet('SimpleCard', theme => ({
   card: {
     minWidth: 275,
-    margin: '20px',
+    margin: '0',
   },
   bullet: {
     display: 'inline-block',
@@ -41,7 +41,7 @@ function SimpleCard(props) {
               </Avatar>
             }
             title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016"
+            subheader="September 14, 2016" 
         />
         <CardMedia>
           <img src="https://material-ui-1dab0.firebaseapp.com/build/abd50bc0e11052fea9669f18f0c017bc.jpg" alt="Contemplative Reptile" />

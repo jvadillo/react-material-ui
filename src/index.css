@@ -7,4 +7,5 @@ body {
 .container {
 	margin: 0 auto;
   	max-width: 680px;
+  	padding-top: 60px;
 }
