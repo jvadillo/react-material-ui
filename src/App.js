@@ -46,51 +46,6 @@ class App extends Component {
           <CustomAppBar />
           <div className="container">
             <MyCustomCard />
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to React</h2>
-            
-            <p className="App-intro">
-              To get started, edit <code>src/App.js</code> and save to reload.
-            </p>
-            <Button>
-              Hello World
-            </Button>
-            <div>
-              <Grid container gutter={24}>
-                <Grid item xs>
-                  <Paper>xs</Paper>
-                </Grid>
-                <Grid item xs={6}>
-                  <Paper>xs=6</Paper>
-                </Grid>
-                <Grid item xs>
-                  <Paper>xs</Paper>
-                </Grid>
-              </Grid>
-              <List>
-                <ListItem button>
-                  <ListItemIcon>
-                    <InboxIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Inbox" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <DraftsIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Drafts" />
-                </ListItem>
-              </List>
-              <Divider />
-              <List>
-                <ListItem button>
-                  <ListItemText primary="Trash" />
-                </ListItem>
-                <ListItem button component="a" href="#simple-list">
-                  <ListItemText primary="Spam" />
-                </ListItem>
-              </List>
-            </div>
           </div>
         </div> 
       </MuiThemeProvider>
