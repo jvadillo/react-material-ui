@@ -12,7 +12,7 @@ import ShareIcon from 'material-ui-icons/Share';
 const styleSheet = createStyleSheet('SimpleCard', theme => ({
   card: {
     minWidth: 275,
-    margin: '0',
+    margin: '0 0 60px 0',
   },
   bullet: {
     display: 'inline-block',
