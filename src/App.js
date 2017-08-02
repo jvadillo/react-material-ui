@@ -22,23 +22,28 @@ export default App;*/
 
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Button from 'material-ui/Button';
-import Grid from 'material-ui/Grid';
-import Paper from 'material-ui/Paper';
-import AppBar from 'material-ui/AppBar';
-
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
-import InboxIcon from 'material-ui-icons/Inbox';
-import DraftsIcon from 'material-ui-icons/Drafts';
-
+/* Custom components */
 import MyCustomCard from './components/MyCustomCard';
 import CustomAppBar from './components/CustomAppBar';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.loadData();
+  }
+
+  loadData(){
+    fetch('./assets/fakeData.json')
+    .then((res) => res.json())
+    .then((data) => {
+      console.log('data:', data);
+    })
+  }
+
   render() {
     return (
       <MuiThemeProvider>
